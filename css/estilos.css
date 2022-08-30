@@ -228,6 +228,20 @@ a{
     flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
+    overflow: hidden;
+    position: relative;
+    animation: scroll 30s linear infinite;
+    animation-direction: normal;
+    animation-delay: 0s;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0)
+    }
+    100%{
+        transform: translateX(calc(-250px * 7));
+    }
 }
 
 .carrusel__logo{
