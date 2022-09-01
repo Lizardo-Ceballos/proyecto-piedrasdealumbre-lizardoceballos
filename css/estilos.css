@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image:radial-gradient(100% 100% at 50% 100%, #feb2b2 0%, rgba(252, 184, 219, 0.75) 25%, rgba(239, 194, 250, 0.5) 50%, rgba(190, 227, 248, 0) 100%), linear-gradient(90deg, #e8d0b4 0%, #e5c7a7 14.29%, #e3be9b 28.57%, #e1b48e 42.86%, #dfab83 57.14%, #daa27b 71.43%, #d2906d 100%)
+    background-image:radial-gradient(100% 100% at 50% 100%, #feb2b2 0%, rgba(252, 184, 219, 0.75) 25%, rgba(239, 194, 250, 0.5) 50%, rgba(190, 227, 248, 0) 100%), linear-gradient(90deg, #e8d0b4 0%, #e5c7a7 14.29%, #e3be9b 28.57%, #e1b48e 42.86%, #dfab83 57.14%, #daa27b 71.43%, #d2906d 100%);
 }
 /* GENERALES*/
 
@@ -20,7 +20,8 @@ h1, h2, h3{
 /* CSS INDEX */
 
 .heroimage{
-    max-height: 1000px ;
+    max-height: 1000px;
+    max-width: 100%;
 }
 
 .logo__nav{
@@ -63,4 +64,16 @@ a{
 
 .logofoot, .img__card{
     max-width: 150px;
+}
+
+.foot__social{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.iconSM{
+    width: 25px;
+}
+
+.foot__socialmedia{
+    justify-content: space-between;
 }
