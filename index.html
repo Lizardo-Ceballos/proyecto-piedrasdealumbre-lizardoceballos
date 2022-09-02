@@ -15,27 +15,25 @@
 <body>
     <header class="container-fluid">
         <div class="row">
-            <div class="col-12 col-lg-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-opacity-25 bg-light">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
-                            <img src="recursos/img/logo.png" alt="logo pagina web" class="logo__nav">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-                                <a class="nav-link" href="pages/productos.html">PRODUCTOS</a>
-                                <a class="nav-link" href="pages/nosotros.html">NOSOTROS</a>
-                                <a class="nav-link" href="pages/preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a>
-                                <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
-                            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-opacity-25 bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="recursos/img/logo.png" alt="logo pagina web" class="logo__nav">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                            <a class="nav-link" href="pages/productos.html">PRODUCTOS</a>
+                            <a class="nav-link" href="pages/nosotros.html">NOSOTROS</a>
+                            <a class="nav-link" href="pages/preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a>
+                            <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
                         </div>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
     </header>
 <!--Carrusel Hero-->
@@ -134,8 +132,8 @@
                 Nuestros Productos
             </h2>
         </div>
-        <div class="row  justify-content-around my-2">
-            <div class="card col-3 col-lg-4" style="width: 18rem;">
+        <div class="row  justify-content-around my-4">
+            <div class="card col-3 col-lg-4 my-2 bg-opacity-25 bg-light border-dark" style="width: 18rem;">
                 <img src="/recursos/img/productocard1.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Piedra Extra Grande</h5>
@@ -146,18 +144,18 @@
                     </div>
                 </div>
             </div>
-            <div class="card col-3 col-lg-4" style="width: 18rem;">
+            <div class="card col-3 col-lg-4 my-2 bg-opacity-25 bg-light border-dark" style="width: 18rem;">
                 <img src="/recursos/img/productocard1.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Piedra Grande</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <div class="row">
-                        <a href="#" class="btn btn-primary my-1">Comprar Ahora</a>
+                        <a href="#" class="btn btn-primary  my-1">Comprar Ahora</a>
                         <a href="#" class="btn btn-secondary my-1">Agregar al carrito</a>
                     </div>
                 </div>
             </div>
-            <div class="card col-3 col-lg-4" style="width: 18rem;">
+            <div class="card col-3 col-lg-4 my-2 bg-opacity-25 bg-light border-dark" style="width: 18rem;">
                 <img src="/recursos/img/productocard1.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Piedra Mediana</h5>
@@ -170,121 +168,104 @@
             </div>
         </div>
     </div>
-    <section class="container-fluid col-12 g-0">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="recursos/img/heroimage6.jpg" class="d-block w-100 opacity-75" alt="...">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="recursos/img/heroimage5.jpg" class="d-block w-100 opacity-75" alt="...">
                     <div class="carousel-caption d-md-block">
                         <h2>First slide label</h2>
                         <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="recursos/img/heroimage2.jpg" class="d-block w-100 opacity-75" alt="...">
+                <div class="carousel-item">
+                    <img src="recursos/img/heroimage4.jpg" class="d-block w-100 opacity-75" alt="...">
                     <div class="carousel-caption d-md-block">
-                        <h2>Second slide label</h2>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <h2>First slide label</h2>
+                        <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="recursos/img/heroimage3.jpg" class="d-block w-100 opacity-75" alt="...">
+                    <img src="recursos/img/heroimage7.jpg" class="d-block w-100 opacity-75" alt="...">
                     <div class="carousel-caption d-md-block">
-                        <h2>Third slide label</h2>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h2>First slide label</h2>
+                        <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-    <footer class="bg-light bg-opacity-25 text-center text-lg-start container-fluid">
+    </div>
+    <footer class="bg-light bg-opacity-25 container-fluid">
         <!-- Grid container -->
-        <div class="container p-4">
-            <div class="d-flex justify-content-between">
-            <!--Grid column-->
-            <div class="col-lg-auto col-md-auto mb-4 mb-md-0">
-                <h5 class="text-uppercase">Links</h5>
-                <ul class="list-unstyled mb-0">
-                    <li>
-                        <a href="#!" class="text-dark text-decoration-none">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-dark text-decoration-none">Productos</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-dark text-decoration-none">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-dark text-decoration-none">Preguntas Frecuentes</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-dark text-decoration-none">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-            <!--Grid column-->
-            <!--Grid column-->
-            <div class="col-lg-auto col-md-auto mb-4 mb-md-0">
-                <div class="foot__logo">
-                    <a href="index.html">
-                        <img class="logofoot" src="recursos/img/logo.png" alt="logo">
-                    </a>
+        <div class="container-fluid p-4">
+            <div class="d-flex justify-content-center align-items-start text-center">
+                <!--Grid column-->
+                <div class="col-lg-4 col-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">MENU</h5>
+                    <ul class="list-unstyled mb-0 ">
+                        <li>
+                            <a href="#!" class="text-dark text-decoration-none">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark text-decoration-none">Productos</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark text-decoration-none">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark text-decoration-none">Preguntas Frecuentes</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark text-decoration-none">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="foot__socialmedia d-flex" >
-                    <figure class="icon__contain">
-                        <a href="#">
-                            <img  class="iconSM" src="https://img.icons8.com/ios/50/000000/facebook-new.png" alt="Facebook">
+                <!--Grid column del logo-->
+                <div class="col-lg-4 col-4 mb-4 mb-md-0">
+                    <div class="foot__logo d-flex justify-content-center">
+                        <a href="index.html">
+                            <img class="logofoot" src="recursos/img/logo.png" alt="logo">
                         </a>
-                    </figure>
-                    <figure class="icon__contain">
-                        <a href="#">
-                            <img  class="iconSM" src="https://img.icons8.com/ios/50/000000/whatsapp--v1.png" alt="WhatsApp">
-                        </a>
-                    </figure>
-                    <figure class="icon__contain">
-                        <a href="#">
-                            <img   class="iconSM" src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png" alt="Instagram">
-                        </a>
-                    </figure>
-                    <figure class="icon__contain">
-                        <a href="#">
-                            <img class="iconSM" src="https://img.icons8.com/ios/50/000000/email.png" alt="Gmail">
-                        </a>
-                    </figure>
+                    </div>
+                    <div class="foot__socialmedia d-flex" >
+                        <figure class="icon__contain">
+                            <a href="#">
+                                <img  class="iconSM" src="https://img.icons8.com/ios/50/000000/facebook-new.png" alt="Facebook">
+                            </a>
+                        </figure>
+                        <figure class="icon__contain">
+                            <a href="#">
+                                <img  class="iconSM" src="https://img.icons8.com/ios/50/000000/whatsapp--v1.png" alt="WhatsApp">
+                            </a>
+                        </figure>
+                        <figure class="icon__contain">
+                            <a href="#">
+                                <img   class="iconSM" src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png" alt="Instagram">
+                            </a>
+                        </figure>
+                        <figure class="icon__contain">
+                            <a href="#">
+                                <img class="iconSM" src="https://img.icons8.com/ios/50/000000/email.png" alt="Gmail">
+                            </a>
+                        </figure>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-auto col-md-auto mb-4 mb-md-0">
-                <h5 class="text-uppercase">Links</h5>
-                <ul class="list-unstyled mb-0">
-                    <li>
-                        <a href="#!" class="text-dark">Link 1</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-dark">Link 2</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-dark">Link 3</a>
-                    </li>
-                    <li>
-                        <a href="#!" class="text-dark">Link 4</a>
-                    </li>
-                </ul>
-            </div>
-            <!--Grid column-->
-            <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-4 col-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">CONTACTO</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-dark">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!-- Grid container -->

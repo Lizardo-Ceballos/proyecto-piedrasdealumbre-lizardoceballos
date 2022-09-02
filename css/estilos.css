@@ -71,9 +71,9 @@ a{
     flex-flow: row nowrap;
 }
 .iconSM{
-    width: 25px;
+    width: 28px;
 }
 
 .foot__socialmedia{
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
