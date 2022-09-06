@@ -34,32 +34,40 @@ a{
     color: black;
 }
 
+.con-carri{
+    display: flex;
+    min-width: 100%;
+    overflow: hidden;
+}
+
 .carrusel{
     grid-area: carrusel;
     margin: 20px 0px;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    overflow: hidden;
     position: relative;
-    animation: scroll 30s linear infinite;
-    animation-direction: normal;
-    animation-delay: 0s;
+    animation: scroll 20s linear infinite;
+    min-width: 100%;
 }
 
 @keyframes scroll{
-    0%{
+    from{
         transform: translateX(0)
     }
-    100%{
-        transform: translateX(calc(-250px * 7));
+    to{
+        transform: translateX(calc( -100%));
     }
+}
+
+.con-carri:hover .carrusel{
+    animation-play-state: paused;
 }
 
 .carrusel__logo{
     height: auto;
-    width: 150px;
+    max-width: 150px;
 }
 
 .logofoot, .img__card{
@@ -74,6 +82,57 @@ a{
     width: 28px;
 }
 
-.foot__socialmedia{
-    justify-content: space-evenly;
+/* Nosotros*/
+.logo__nosotros, .logo-preguntasf{
+    max-width: 300px;
+}
+
+.logo__valores{
+    max-width: 200px;
+}
+
+.logo-contacto{
+    max-width: 400px;
+}
+
+.hero--nosotros{
+    background: url(../recursos/img/stock6.jpg) fixed center/cover;
+    height: 750px;
+    width: auto;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero--nosotros:before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #c0c2c1;
+    opacity: .10;
+}
+
+.h-n-info{
+    padding: 0px;
+    justify-content: center;
+    position: absolute;
+    width: 50%;
+    max-width: 100%;
+    text-align: center;
+    color: black;
+    margin: auto;
+}
+
+.valor-contain{
+    width: 50%;
+}
+
+.piedra--simbol{
+    max-height: 250px;
+}
+
+.bn-pr{
+    max-width: 150px;
 }

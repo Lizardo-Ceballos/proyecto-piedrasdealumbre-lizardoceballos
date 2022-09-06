@@ -20,16 +20,32 @@
                     <a class="navbar-brand" href="#">
                         <img src="recursos/img/logo.png" alt="logo pagina web" class="logo__nav">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
-                            <a class="nav-link" href="pages/productos.html">PRODUCTOS</a>
-                            <a class="nav-link" href="pages/nosotros.html">NOSOTROS</a>
-                            <a class="nav-link" href="pages/preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a>
-                            <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                    <div class="offcanvas bg-opacity-50 offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                        <img src="recursos/img/logo.png" alt="logo pagina web" class="logo__nav">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/productos.html">PRODUCTOS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/nosotros.html">NOSOTROS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -78,31 +94,55 @@
         </div>
     </section>
 <!--Scroller con logos de las tiendas asociadas-->
-    <div class="carrusel">
-        <figure class="carrusel__img">
-            <a href="https://www.mercadolibre.com.mx/" target="_blank">
-                <img class="carrusel__logo" src="recursos/carrusel/mercado-libre-logo.png" alt="MercadoLibre"/>
-            </a>
-        </figure>
-        <figure class="carrusel__img">
-            <a href="https://www.amazon.com.mx/" target="_blank">
-                <img class="carrusel__logo" src="recursos/carrusel/Amazon.png" alt="Amazon"/>
-            </a>
-        </figure>
-        <figure class="carrusel__img">
-            <a href="https://www.shopify.com.mx/" target="_blank">
-                <img class="carrusel__logo" src="recursos/carrusel/Shopify-Emblem.png" alt="Shopify"/>
-            </a>
-        </figure>
-        <figure class="carrusel__img">
-            <a href="https://www.kichink.com/" target="_blank">
-                <img class="carrusel__logo" src="recursos/carrusel/kichink.png" alt="Kichink"/>
-            </a>
-        </figure>
+    <div class="con-carri">
+        <div class="carrusel">
+            <figure class="carrusel__img">
+                <a href="https://www.mercadolibre.com.mx/" target="_blank">
+                    <img class="carrusel__logo" src="recursos/carrusel/mercado-libre-logo.png" alt="MercadoLibre"/>
+                </a>
+            </figure>
+            <figure class="carrusel__img">
+                <a href="https://www.amazon.com.mx/" target="_blank">
+                    <img class="carrusel__logo" src="recursos/carrusel/Amazon.png" alt="Amazon"/>
+                </a>
+            </figure>
+            <figure class="carrusel__img">
+                <a href="https://www.shopify.com.mx/" target="_blank">
+                    <img class="carrusel__logo" src="recursos/carrusel/Shopify-Emblem.png" alt="Shopify"/>
+                </a>
+            </figure>
+            <figure class="carrusel__img">
+                <a href="https://www.kichink.com/" target="_blank">
+                    <img class="carrusel__logo" src="recursos/carrusel/kichink.png" alt="Kichink"/>
+                </a>
+            </figure>
+        </div>
+        <div class="carrusel">
+            <figure class="carrusel__img">
+                <a href="https://www.mercadolibre.com.mx/" target="_blank">
+                    <img class="carrusel__logo" src="recursos/carrusel/mercado-libre-logo.png" alt="MercadoLibre"/>
+                </a>
+            </figure>
+            <figure class="carrusel__img">
+                <a href="https://www.amazon.com.mx/" target="_blank">
+                    <img class="carrusel__logo" src="recursos/carrusel/Amazon.png" alt="Amazon"/>
+                </a>
+            </figure>
+            <figure class="carrusel__img">
+                <a href="https://www.shopify.com.mx/" target="_blank">
+                    <img class="carrusel__logo" src="recursos/carrusel/Shopify-Emblem.png" alt="Shopify"/>
+                </a>
+            </figure>
+            <figure class="carrusel__img">
+                <a href="https://www.kichink.com/" target="_blank">
+                    <img class="carrusel__logo" src="recursos/carrusel/kichink.png" alt="Kichink"/>
+                </a>
+            </figure>
+        </div>
     </div>
     <div class="container-fluid my-4">
         <div class="row justify-content-center">
-            <h2 class="text-uppercase text-center">
+            <h2 class="text-center">
                 Nosotros Somos
             </h2>
         </div>
@@ -128,157 +168,76 @@
     </div>
     <div class="container-fluid my-4">
         <div class="row justify-content-center my-2">
-            <h2 class="text-uppercase text-center">
+            <h2 class="text-center">
                 Nuestros Productos
             </h2>
         </div>
-        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="true" data-bs-interval="false">
-            <div class="carousel-inner d-flex justify-content-center">
-                <div class="carousel-item active">
-                    <div class="card mb-3 bg-opacity-75 bg-light border-dark" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="recursos/img/productocard1.png" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-block">
-                                        <a href="#" class="btn btn-outline-primary">Comprar Ahora</a>
-                                    </div>                                </div>
-                            </div>
-                        </div>
+        <div class="row  justify-content-around my-4">
+            <div class="card mb-3 bg-opacity-25 bg-light border-dark" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="recursos/img/productocard1.png" class="img-fluid rounded-start" alt="...">
                     </div>
-                    <div class="card mb-3 bg-opacity-75 bg-light border-dark" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="recursos/img/productocard1.png" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-block">
-                                        <a href="#" class="btn btn-outline-primary">Comprar Ahora</a>
-                                    </div>                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card mb-3 bg-opacity-75 bg-light border-dark" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="recursos/img/productocard1.png" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-block">
-                                        <a href="#" class="btn btn-outline-primary">Comprar Ahora</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3 bg-opacity-75 bg-light border-dark" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="recursos/img/productocard1.png" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-block">
-                                        <a href="#" class="btn btn-outline-primary">Comprar Ahora</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card mb-3 bg-opacity-75 bg-light border-dark" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="recursos/img/productocard1.png" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-block">
-                                        <a href="#" class="btn btn-outline-primary">Comprar Ahora</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-3 bg-opacity-75 bg-light border-dark" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="recursos/img/productocard1.png" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    <div class="d-block">
-                                        <a href="#" class="btn btn-outline-primary">Comprar Ahora</a>
-                                    </div>
-                                </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-block">
+                                <a href="#" class="btn btn-outline-primary">Comprar Ahora</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="card mb-3 bg-opacity-25 bg-light border-dark" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="recursos/img/productocard1.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-block">
+                                <a href="#" class="btn btn-outline-primary">Comprar Ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 bg-opacity-25 bg-light border-dark" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="recursos/img/productocard1.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-block">
+                                <a href="#" class="btn btn-outline-primary">Comprar Ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 bg-opacity-25 bg-light border-dark" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="recursos/img/productocard1.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-block">
+                                <a href="#" class="btn btn-outline-primary">Comprar Ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--<div class="row  justify-content-around my-4">
-            <div class="card col-3 col-lg-4 my-2 bg-opacity-25 bg-light border-dark" style="width: 18rem;">
-                <img src="/recursos/img/productocard1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Piedra Extra Grande</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                        <a href="#" class="btn btn-primary my-1">Comprar Ahora</a>
-                        <a href="#" class="btn btn-secondary my-1">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card col-3 col-lg-4 my-2 bg-opacity-25 bg-light border-dark" style="width: 18rem;">
-                <img src="/recursos/img/productocard1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Piedra Grande</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                        <a href="#" class="btn btn-primary  my-1">Comprar Ahora</a>
-                        <a href="#" class="btn btn-secondary my-1">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card col-3 col-lg-4 my-2 bg-opacity-25 bg-light border-dark" style="width: 18rem;">
-                <img src="/recursos/img/productocard1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Piedra Mediana</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                        <a href="#" class="btn btn-primary my-1">Comprar Ahora</a>
-                        <a href="#" class="btn btn-secondary my-1">Agregar al carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -307,37 +266,16 @@
     </div>
     <footer class="bg-light bg-opacity-25 container-fluid">
         <!-- Grid container -->
-        <div class="container-fluid p-4">
-            <div class="d-flex justify-content-center align-items-start text-center">
-                <!--Grid column-->
-                <div class="col-lg-4 col-4 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">MENU</h5>
-                    <ul class="list-unstyled mb-0 ">
-                        <li>
-                            <a href="#!" class="text-dark text-decoration-none">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-dark text-decoration-none">Productos</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-dark text-decoration-none">Nosotros</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-dark text-decoration-none">Preguntas Frecuentes</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-dark text-decoration-none">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column del logo-->
+        <div class="container-fluid py-lg-4 p-4">
+            <div class="d-flex justify-content-between align-items-stretch text-center">
+                <!--Grid column de LOGO-->
                 <div class="col-lg-4 col-4 mb-4 mb-md-0">
                     <div class="foot__logo d-flex justify-content-center">
                         <a href="index.html">
                             <img class="logofoot" src="recursos/img/logo.png" alt="logo">
                         </a>
                     </div>
-                    <div class="foot__socialmedia d-flex" >
+                    <div class="foot__socialmedia d-flex justify-content-center" >
                         <figure class="icon__contain">
                             <a href="#">
                                 <img  class="iconSM" src="https://img.icons8.com/ios/50/000000/facebook-new.png" alt="Facebook">
@@ -360,21 +298,42 @@
                         </figure>
                     </div>
                 </div>
-                <!--Grid column-->
+                <!--Grid column Contacto-->
                 <div class="col-lg-4 col-4 mb-4 mb-md-0">
                     <h5 class="text-uppercase">CONTACTO</h5>
                     <ul class="list-unstyled mb-0">
                         <li>
-                            <a href="#!" class="text-dark">Link 1</a>
+                            <a href="#!" class="text-dark text-decoration-none">Link 1</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-dark">Link 2</a>
+                            <a href="#!" class="text-dark text-decoration-none">Link 2</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-dark">Link 3</a>
+                            <a href="#!" class="text-dark text-decoration-none">Link 3</a>
                         </li>
                         <li>
-                            <a href="#!" class="text-dark">Link 4</a>
+                            <a href="#!" class="text-dark text-decoration-none">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column Menu-->
+                <div class="col-lg-4 col-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">MENU</h5>
+                    <ul class="list-unstyled mb-0 ">
+                        <li>
+                            <a href="#!" class="text-dark text-decoration-none">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark text-decoration-none">Productos</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark text-decoration-none">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark text-decoration-none">Preguntas Frecuentes</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark text-decoration-none">Contacto</a>
                         </li>
                     </ul>
                 </div>

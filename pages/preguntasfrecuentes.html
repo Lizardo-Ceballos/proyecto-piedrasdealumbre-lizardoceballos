@@ -20,42 +20,52 @@
                     <a class="navbar-brand" href="#">
                         <img src="../recursos/img/logo.png" alt="logo pagina web" class="logo__nav">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
-                            <a class="nav-link" href="productos.html">PRODUCTOS</a>
-                            <a class="nav-link" href="nosotros.html">NOSOTROS</a>
-                            <a class="nav-link" href="preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a>
-                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    <div class="offcanvas bg-opacity-50 offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                        <img src="../recursos/img/logo.png" alt="logo pagina web" class="logo__nav">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="productos.html">PRODUCTOS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="preguntasfrecuentes.html">PREGUNTAS FRECUENTES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contacto.html">CONTACTO</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
-    <section>
+    <section class="d-flex flex-column align-items-center container-fluid">
         <figure>
-            <img class="logo" src="../recursos/img/logo.png" alt="logo">
+            <img class="logo-preguntasf" src="../recursos/img/logo.png" alt="logo">
         </figure>
         <h2>Como Podemos Ayudarte</h2>
     </section>
-    <section>
-        <div>
+    <section class="row container-fluid justify-content-evenly">
+        <div class="col-2 d-flex flex-column align-items-center">
             <figure>
                 <img src="https://img.icons8.com/ios/50/000000/product--v1.png" alt="producto"/>
             </figure>
             <h3>Productos</h3>
-            <ul>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-                <li>Lorem Ipsum</li>
-            </ul>
         </div>
-        <div>
+        <div class="col-2 d-flex flex-column align-items-center">
             <figure>
                 <img src="https://img.icons8.com/ios/50/000000/order-on-the-way.png" alt="envio"/>
             </figure>
@@ -67,7 +77,7 @@
                 <li>Lorem Ipsum</li>
             </ul>
         </div>
-        <div>
+        <div class="col-2 d-flex flex-column align-items-center">
             <figure>
                 <img src="https://img.icons8.com/ios/50/000000/best-seller.png" alt="garantia"/>
             </figure>
@@ -84,47 +94,47 @@
         <!--Se repite la seccion de acceso rapido a contacto en caso de alguna duda-->
         <h2>Lorem Ipsum</h2>
         <figure>
-            <img class="logo" src="../recursos/img/logo.png" alt="">
+            <img class="logo-contacto" src="../recursos/img/logo.png" alt="">
         </figure>
         <div class="pf__social">
             <div class="social__contacto">
                 <figure>
                     <a href="#">
-                        <img  class="iconSM--contacto" src="https://img.icons8.com/ios/50/000000/facebook-new.png" alt="Facebook">
+                        <img class="iconSM--contacto" src="https://img.icons8.com/ios/50/000000/facebook-new.png" alt="Facebook">
                     </a>
                 </figure>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugiat, quasi ex libero et porro voluptas, inventore quo, consequuntur quam cupiditate ipsam illo tempora officia? Non voluptatibus eveniet et atque.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio fugiat, quasi ex libero et porro voluptas, inventore quo,
                 </p>
             </div>
             <div class="social__contacto">
                 <figure>
                     <a href="#">
-                        <img  class="iconSM--contacto" src="https://img.icons8.com/ios/50/000000/whatsapp--v1.png" alt="WhatsApp">
+                        <img class="iconSM--contacto" src="https://img.icons8.com/ios/50/000000/whatsapp--v1.png" alt="WhatsApp">
                     </a>
                 </figure>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem rerum nulla labore odit pariatur adipisci error natus praesentium doloribus repudiandae! Sequi quia laudantium architecto blanditiis nesciunt eos corporis et sit.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem rerum nulla labore odit pariatur adipisci error natus praesentium dolo
                 </p>
             </div>
             <div class="social__contacto">
                 <figure>
                     <a href="#">
-                        <img   class="iconSM--contacto" src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png" alt="Instagram">
+                        <img class="iconSM--contacto" src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png" alt="Instagram">
                     </a>
                 </figure>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eius nemo fuga beatae nostrum voluptatibus distinctio quidem, ratione similique animi ex culpa sapiente quod minima officiis voluptates repellendus fugiat facilis?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt eius nemo fuga beatae nostrum voluptatibus distinctio quidem, ratione s
                 </p>
             </div>
             <div class="social__contacto">
                 <figure>
                     <a href="#">
-                        <img  class="iconSM--contacto" src="https://img.icons8.com/ios/50/000000/email.png" alt="Gmail">
+                        <img class="iconSM--contacto" src="https://img.icons8.com/ios/50/000000/email.png" alt="Gmail">
                     </a>
                 </figure>
                 <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt quaerat architecto dignissimos, reprehenderit incidunt ea. Ratione dolorem deserunt labore? Illum minus dolorem ut mollitia placeat libero hic, nemo obcaecati beatae.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt quaerat architecto dignissimos, reprehenderit incidunt ea.
                 </p>
             </div>
         </div>
@@ -167,69 +177,89 @@
             <input type="reset" value="Limpiar Formulario">
         </div>
     </form>
-    <footer class="foot">
-        <div class="foot__menu">
-            <h3>MENU</h3>
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-                <li>
-                    <a href="preguntasfrecuentes.html">Preguntas Frecuentes</a>
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul> 
-        </div>
-        <div class="foot__contacto">
-            <h3>CONTACTO</h3>
-            <ul>
-                <li>Numero</li>
-                <li>Correo</li>
-                <li>Dirección</li>
-            </ul> 
-        </div>
-        <div class="foot__social">
-            <div class="foot__logo">
-                <figure>
-                    <a href="index.html">
-                        <img class="logofoot" src="../recursos/img/logo.png" alt="logo">
-                    </a>
-                </figure>
-            </div>    
-            <div class="foot__socialmedia" >
-                <figure>
-                    <a href="#">
-                        <img  class="iconSM" src="https://img.icons8.com/ios/50/000000/facebook-new.png" alt="Facebook">
-                    </a>
-                </figure>
-                <figure>
-                    <a href="#">
-                        <img  class="iconSM" src="https://img.icons8.com/ios/50/000000/whatsapp--v1.png" alt="WhatsApp">
-                    </a>
-                </figure>
-                <figure>
-                    <a href="#">
-                        <img   class="iconSM" src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png" alt="Instagram">
-                    </a>
-                </figure>
-                <figure>
-                    <a href="#">
-                        <img class="iconSM" src="https://img.icons8.com/ios/50/000000/email.png" alt="Gmail">
-                    </a>
-                </figure>
+    <footer class="bg-light bg-opacity-25 container-fluid">
+        <!-- Grid container -->
+        <div class="container-fluid py-lg-4 p-4">
+            <div class="d-flex justify-content-between align-items-stretch text-center">
+                <!--Grid column de LOGO-->
+                <div class="col-lg-4 col-4 mb-4 mb-md-0">
+                    <div class="foot__logo d-flex justify-content-center">
+                        <a href="index.html">
+                            <img class="logofoot" src="../recursos/img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="foot__socialmedia d-flex justify-content-center" >
+                        <figure class="icon__contain">
+                            <a href="#">
+                                <img  class="iconSM" src="https://img.icons8.com/ios/50/000000/facebook-new.png" alt="Facebook">
+                            </a>
+                        </figure>
+                        <figure class="icon__contain">
+                            <a href="#">
+                                <img  class="iconSM" src="https://img.icons8.com/ios/50/000000/whatsapp--v1.png" alt="WhatsApp">
+                            </a>
+                        </figure>
+                        <figure class="icon__contain">
+                            <a href="#">
+                                <img   class="iconSM" src="https://img.icons8.com/ios/50/000000/instagram-new--v1.png" alt="Instagram">
+                            </a>
+                        </figure>
+                        <figure class="icon__contain">
+                            <a href="#">
+                                <img class="iconSM" src="https://img.icons8.com/ios/50/000000/email.png" alt="Gmail">
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+                <!--Grid column Contacto-->
+                <div class="col-lg-4 col-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">CONTACTO</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="#!" class="text-dark text-decoration-none">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark text-decoration-none">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark text-decoration-none">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-dark text-decoration-none">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column Menu-->
+                <div class="col-lg-4 col-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">MENU</h5>
+                    <ul class="list-unstyled mb-0 ">
+                        <li>
+                            <a href="../index.html" class="text-dark text-decoration-none">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="productos.html" class="text-dark text-decoration-none">Productos</a>
+                        </li>
+                        <li>
+                            <a href="nosotros.html" class="text-dark text-decoration-none">Nosotros</a>
+                        </li>
+                        <li>
+                            <a href="preguntasfrecuentes.html" class="text-dark text-decoration-none">Preguntas Frecuentes</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html" class="text-dark text-decoration-none">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="foot__reserv">
-            <p>Derechos Reservados 2022</p>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class=" row text-center justify-content-center p-2">
+            <p class="text-center">
+                © 2020 Copyright
+            </p>
         </div>
+        <!-- Copyright -->
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
