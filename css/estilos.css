@@ -36,7 +36,6 @@ a{
 
 .con-carri{
     display: flex;
-    min-width: 100%;
     overflow: hidden;
 }
 
@@ -49,7 +48,6 @@ a{
     align-items: center;
     position: relative;
     animation: scroll 20s linear infinite;
-    min-width: 100%;
 }
 
 @keyframes scroll{
@@ -135,4 +133,19 @@ a{
 
 .bn-pr{
     max-width: 150px;
+}
+
+@media only screen and (max-width: 568px) {
+    .logo__nav, .logofoot{
+        max-height: 100px;
+    }
+    .iconSM{
+        max-width: 15px;
+    }
+    .menu--foot{
+        display: none;
+    }
+    .card{
+        width: 250px;
+    }
 }
