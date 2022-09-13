@@ -1,0 +1,15 @@
+@import "variables";
+@import "images";
+@import "carrusel";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fuenteprimaria;
+    background-color: transparent;
+}
+
+body{
+    background-image:radial-gradient(100% 100% at 50% 100%, #feb2b2 0%, rgba(252, 184, 219, 0.75) 25%, rgba(239, 194, 250, 0.5) 50%, rgba(190, 227, 248, 0) 100%), linear-gradient(90deg, #e8d0b4 0%, #e5c7a7 14.29%, #e3be9b 28.57%, #e1b48e 42.86%, #dfab83 57.14%, #daa27b 71.43%, #d2906d 100%);
+}

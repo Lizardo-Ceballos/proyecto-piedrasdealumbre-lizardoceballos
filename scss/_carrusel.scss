@@ -1,0 +1,28 @@
+.con-carri{
+    display: flex;
+    overflow: hidden;
+
+    & .carrusel{
+        grid-area: carrusel;
+        margin: 20px 0px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        animation: scroll 10s linear infinite;
+    }
+
+    &:hover .carrusel{
+        animation-play-state: paused;
+    }
+}
+
+@keyframes scroll{
+    from{
+        transform: translateX(0)
+    }
+    to{
+        transform: translateX(calc( -100%));
+    }
+}
