@@ -1,0 +1,26 @@
+.hero__nosotros{
+    background: url(../recursos/img/stock6.jpg) fixed center/cover;
+    height: 750px;
+    width: auto;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    &:before{
+        content: "";
+        height: 100%;
+        width: 100%;
+        background: $color-sec;
+        opacity: .2;
+    }
+    &--info{
+        padding: 0px;
+        justify-content: center;
+        position: absolute;
+        width: 50%;
+        max-width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+}

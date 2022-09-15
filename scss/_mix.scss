@@ -1,0 +1,12 @@
+@import "variables";
+
+@mixin imagesformat ($height, $width) {
+    max-height: $height;
+    max-width: $width;
+};
+
+@mixin estilodeSecc {
+    color: $color-ter;
+    text-shadow: 0px 4px 10px $color-pr;
+    text-transform: uppercase;
+}

@@ -1,18 +1,24 @@
+
 .con-carri{
     display: flex;
+    flex-flow: row nowrap;
     overflow: hidden;
-
+    justify-content: space-around;
+    width: 100%;
     & .carrusel{
         grid-area: carrusel;
-        margin: 20px 0px;
+        margin: 20px 15px;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
         align-items: center;
         position: relative;
-        animation: scroll 10s linear infinite;
+        animation: scroll 15s linear infinite;
+        &__img{
+            width: 150px;
+            margin: 5px;
+        }
     }
-
     &:hover .carrusel{
         animation-play-state: paused;
     }
@@ -20,9 +26,9 @@
 
 @keyframes scroll{
     from{
-        transform: translateX(0)
+        transform: translateX(200%)
     }
     to{
-        transform: translateX(calc( -100%));
+        transform: translateX(calc( -200%));
     }
 }

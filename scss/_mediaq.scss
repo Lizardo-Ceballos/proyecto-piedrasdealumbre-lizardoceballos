@@ -1,0 +1,17 @@
+@media only screen and (max-width: 568px) {
+    .logo__nav, .logofoot{
+        max-height: 100px;
+    }
+    .iconSM{
+        max-width: 15px;
+    }
+    .menu--foot{
+        display: none;
+    }
+    .card{
+        width: 250px;
+    }
+    .piedra--simbol{
+        max-height: 180px;
+    }
+}
