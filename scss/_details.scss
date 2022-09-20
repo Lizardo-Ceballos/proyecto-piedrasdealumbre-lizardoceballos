@@ -1,0 +1,31 @@
+@import "variables";
+
+.dtails{
+    margin: .4rem;
+    padding: .3rem;
+    cursor: pointer;
+    &__summary{
+        list-style: none;
+        &::before{
+            content: '+';
+            padding-right: .5rem;
+        }
+    }
+    &[open]{
+        .dtails__summary::before{
+            content: '-';
+        }
+        &:hover{
+                background-color: transparent;
+                border: 2px solid $color-pr;
+                border-radius: 6px;
+        }
+    }
+    &:hover{
+        background-color: $color-pr;
+        border-radius: 6px;
+    }
+    &__p__container{
+        margin: .3rem;
+    }
+}

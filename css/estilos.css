@@ -20,6 +20,27 @@ h2 {
   display: flex;
   flex-flow: row nowrap; }
 
+.dtails {
+  margin: .4rem;
+  padding: .3rem;
+  cursor: pointer; }
+  .dtails__summary {
+    list-style: none; }
+    .dtails__summary::before {
+      content: '+';
+      padding-right: .5rem; }
+  .dtails[open] .dtails__summary::before {
+    content: '-'; }
+  .dtails[open]:hover {
+    background-color: transparent;
+    border: 2px solid #e8d0b4;
+    border-radius: 6px; }
+  .dtails:hover {
+    background-color: #e8d0b4;
+    border-radius: 6px; }
+  .dtails__p__container {
+    margin: .3rem; }
+
 .heroimage {
   max-height: 1000px;
   max-width: 100%; }
@@ -45,8 +66,8 @@ h2 {
   max-width: 200px; }
 
 .logo-contacto {
-  max-height: 400px;
-  max-width: 400px; }
+  max-height: 300px;
+  max-width: 300px; }
 
 .carrusel__logo {
   max-height: 150px;
@@ -70,7 +91,7 @@ h2 {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    animation: scroll 15s linear infinite; }
+    animation: scroll 30s linear infinite; }
     .con-carri .carrusel__img {
       width: 150px;
       margin: 5px; }
@@ -106,6 +127,33 @@ h2 {
     max-width: 100%;
     text-align: center;
     margin: auto; }
+
+.hero__contacto {
+  background: url(../recursos/img/heroimage8.jpg) fixed center/cover;
+  height: 750px;
+  width: auto;
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center; }
+  .hero__contacto:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #c0c2c1;
+    opacity: .2; }
+  .hero__contacto--info {
+    padding: 0px;
+    justify-content: center;
+    position: absolute;
+    width: 50%;
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+    font-size: xx-large; }
+  .hero__contacto p {
+    font-family: "EB Garamond", serif; }
 
 @media only screen and (max-width: 568px) {
   .logo__nav, .logofoot {
