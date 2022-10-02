@@ -1,0 +1,76 @@
+@import "variables";
+@import "mix";
+
+.gridnosotros{
+    display: grid;
+    grid-template-areas: 
+    "head_con head_con head_con head_con head_con head_con head_con head_con"
+    "qSomos qSomos qSomos qSomos qSomos qSomos qSomos qSomos"
+    "hero__nosotros hero__nosotros hero__nosotros hero__nosotros hero__nosotros hero__nosotros hero__nosotros hero__nosotros"
+    "val_con val_con val_con val_con val_con val_con val_con val_con"
+    "client_con client_con client_con client_con client_con client_con client_con client_con"
+    "foot_con foot_con foot_con foot_con foot_con foot_con foot_con foot_con";
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: repeat(6, auto) ;
+}
+
+.head_con{
+    grid-area: head_con;
+    grid-column: 1/9;
+}
+
+.qSomos{
+    grid-area: qSomos;
+    grid-column: 2/8;
+    @include dFlexRnW;
+    @include movil{
+        flex-flow: wrap;
+    }
+}
+
+.hero__nosotros{
+    grid-area: hero__nosotros;
+    grid-column: 1/9;
+    &--info{
+        @include dFlexRnW;
+        @include movil{
+            flex-flow: wrap;
+        }
+    }
+}
+
+.val_con{
+    grid-area: val_con;
+    grid-column: 1/9;
+    margin-left: 11px;
+    margin-right: 11px;
+    & ._vheader{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    & .valores{
+        @extend ._vheader;
+        @include movil{
+            flex-flow: wrap;
+        }
+        & .valor-contain{
+            margin-left: 10px;
+            margin-right: 10px;
+            @include movil{
+                max-width: 80%;
+            }
+        }
+    }
+}
+
+.client_con{
+    grid-area: client_con;
+    grid-column: 2/8;
+}
+
+.foot_con{
+    grid-area: foot_con;
+    grid-column: 1/9;
+}

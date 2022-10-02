@@ -41,6 +41,67 @@ h2 {
   .dtails__p__container {
     margin: .3rem; }
 
+.gridnosotros {
+  display: grid;
+  grid-template-areas: "head_con head_con head_con head_con head_con head_con head_con head_con" "qSomos qSomos qSomos qSomos qSomos qSomos qSomos qSomos" "hero__nosotros hero__nosotros hero__nosotros hero__nosotros hero__nosotros hero__nosotros hero__nosotros hero__nosotros" "val_con val_con val_con val_con val_con val_con val_con val_con" "client_con client_con client_con client_con client_con client_con client_con client_con" "foot_con foot_con foot_con foot_con foot_con foot_con foot_con foot_con";
+  grid-template-columns: repeat(8, 12.5%);
+  grid-template-rows: repeat(6, auto); }
+
+.head_con {
+  grid-area: head_con;
+  grid-column: 1/9; }
+
+.qSomos {
+  grid-area: qSomos;
+  grid-column: 2/8;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 768px) {
+    .qSomos {
+      flex-flow: wrap; } }
+
+.hero__nosotros {
+  grid-area: hero__nosotros;
+  grid-column: 1/9; }
+  .hero__nosotros--info {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center; }
+    @media only screen and (max-width: 768px) {
+      .hero__nosotros--info {
+        flex-flow: wrap; } }
+
+.val_con {
+  grid-area: val_con;
+  grid-column: 1/9;
+  margin-left: 11px;
+  margin-right: 11px; }
+  .val_con ._vheader, .val_con .valores {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center; }
+  @media only screen and (max-width: 768px) {
+    .val_con .valores {
+      flex-flow: wrap; } }
+  .val_con .valores .valor-contain {
+    margin-left: 10px;
+    margin-right: 10px; }
+    @media only screen and (max-width: 768px) {
+      .val_con .valores .valor-contain {
+        max-width: 80%; } }
+
+.client_con {
+  grid-area: client_con;
+  grid-column: 2/8; }
+
+.foot_con {
+  grid-area: foot_con;
+  grid-column: 1/9; }
+
 .heroimage {
   max-height: 1000px;
   max-width: 100%; }
@@ -106,7 +167,7 @@ h2 {
 
 .hero__nosotros {
   background: url(../recursos/img/stock6.jpg) fixed center/cover;
-  height: 750px;
+  height: 700px;
   width: auto;
   position: relative;
   display: flex;
@@ -130,7 +191,7 @@ h2 {
 
 .hero__contacto {
   background: url(../recursos/img/heroimage8.jpg) fixed center/cover;
-  height: 750px;
+  height: 700px;
   width: auto;
   position: relative;
   display: flex;

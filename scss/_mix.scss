@@ -10,3 +10,29 @@
     text-shadow: 0px 4px 10px $color-pr;
     text-transform: uppercase;
 }
+
+@mixin dFlexRnW {
+    display: flex;
+    flex-flow: row nowrap ;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin dFlexRW {
+    display: flex;
+    flex-flow: row wrap ;
+    align-items: center;
+    justify-content: center;
+}
+@mixin dFlexCW {
+    display: flex;
+    flex-flow: row wrap ;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin movil {
+    @media only screen and (max-width: 768px) {
+        @content;
+    }
+}
